@@ -15,16 +15,16 @@ module.exports = {
 				id: 'host',
 				label: 'Projector IP Address',
 				width: 6,
-				default: '192.168.0.1',
+				default: '192.168.1.250',
 				regex: Regex.IP,
 			},
-			{
-                type: 'checkbox',
-                label: 'HTTPS Connection',
-                id: 'https',
-                default: false
-            },
 			/*{
+		                type: 'checkbox',
+        	        	label: 'HTTPS Connection',
+                		id: 'https',
+                		default: false
+            		},
+			{
 				type: 'checkbox',
 				id: 'polling',
 				label: 'Enable Polling',
@@ -45,7 +45,7 @@ module.exports = {
 				width: 3,
 				default: 1000,
 				isVisible: (configValues) => configValues.polling == true,
-			},*/
+			},
 			{
 				type: 'static-text',
 				id: 'info2',
@@ -58,7 +58,7 @@ module.exports = {
 				id: 'verbose',
 				label: 'Enable Verbose Logging',
 				default: false
-			},
+			},*/
 		]
 	}
 }
